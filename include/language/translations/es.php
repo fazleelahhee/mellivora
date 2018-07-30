@@ -217,3 +217,6 @@ $lang['list_exceptions'] = 'Listar excepciones';
 $lang['clear_exceptions'] = 'Limpiar excepciones';
 
 $lang['search'] = 'Buscar';
+
+$lang['please_enter_valid_email_address'] = 'Dirección de correo electrónico inválida ingresada. Por favor ingrese una dirección de correo electrónico válida';
+
