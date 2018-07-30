@@ -438,6 +438,14 @@ function register_account($email, $password, $team_name, $country, $type = null)
     if (empty($email) || empty($password) || empty($team_name)) {
         message_error(lang_get('please_fill_details_correctly'));
     }
+    
+    /**
+     * backend email validation, if someone bypass frontend validation.
+     */
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        message_error('please_enter_valid_email_address');
+    }
+
 
     if (isset($type) && !is_valid_id($type)) {
         message_error(lang_get('invalid_team_type'));
