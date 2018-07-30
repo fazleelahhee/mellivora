@@ -217,3 +217,5 @@ $lang['list_exceptions'] = 'List exceptions';
 $lang['clear_exceptions'] = 'Clear exceptions';
 
 $lang['search'] = 'Search';
+
+$lang['please_enter_valid_email_address'] = 'Invalid email address entered. please enter valid email address';
